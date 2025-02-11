@@ -1,9 +1,19 @@
 /* The main background */
 body{
     background-color: #7693a5; 
+    color:white;
     }
 
+    svg{
+        fill:white;
+    }
 
+.card{
+    background-image:url("images/cardbacking.png");
+    width:786px;
+    height:425px;
+    background-size:cover; 
+}
 
 
 
