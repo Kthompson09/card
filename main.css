@@ -18,8 +18,14 @@ body{
     transform: translateY(+50%);
 
 }
-
-
+@font-face {
+    font-family: 'customfont'; src: url(fonts/VTKSSMASH.ttf);
+}
+h1 {
+    font-family: 'customfont', sans-serif;
+    font-size: 70px;
+    letter-spacing: 2px;
+}
 
 
 
