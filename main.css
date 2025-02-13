@@ -10,10 +10,15 @@ body{
 
 .card{
     background-image:url("images/cardbacking.png");
-    width:936px;
-    height:503px;
+    width:468px;
+    height:252px;
     background-size:cover; 
+    margin: auto;
+    top: 50%;
+    transform: translateY(+50%);
+
 }
+
 
 
 
