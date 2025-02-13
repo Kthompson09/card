@@ -1,41 +1,87 @@
 /* The main background */
-body{
-    background-color: #000000; 
-    color:rgb(0, 0, 0);
-    }
-
-    svg{
-        fill:white;
-    }
-
-.card{
-    background-image:url("images/cardbacking.png");
-    width:468px;
-    height:252px;
-    background-size:cover; 
-    margin: auto;
-    top: 50%;
-    transform: translateY(+50%);
-
+body {
+  background-color: #000000;
+  color: rgb(0, 0, 0);
 }
+
+svg {
+  fill: white;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(5 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  background-image: url("images/cardbacking.png");
+  width: 468px;
+  height: 252px;
+  background-size: cover;
+  margin: auto;
+  top: 50%;
+  transform: translateY(+50%);
+}
+/* The font stuff  */
 @font-face {
-    font-family: 'customfont'; src: url(fonts/VTKSSMASH.ttf);
+  font-family: "customfont";
+  src: url(fonts/VTKSSMASH.ttf);
 }
 h1 {
-    font-family: 'customfont', sans-serif;
-    font-size: 80px;
-    letter-spacing: 2px;
+  font-family: "customfont", sans-serif;
+  font-size: 70px;
+  letter-spacing: 2px;
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  align-self: start;
+  justify-self: start;
+  margin: 0;
 }
-h2{
-    font-family: Allerta Stencil;
-    font-size: 20px;
+h2 {
+  font-family: Allerta Stencil;
+  font-size: 20px;
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  align-self: start;
+  justify-self: start;
+  margin: 0;
 }
-li{ 
-    font-family: alata;
-    font-size: 15px;
-    list-style-type: none;
+li {
+  font-family: alata;
+  font-size: 15px;
+  list-style-type: disc;
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  margin-top: -15px;
+  line-height: 2.5;
 }
-
-
-    
-    
+/* styles for svgs */
+.insta {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  grid-column: 1; /* First column */
+  grid-row: 4; /* Fourth row */
+  align-self: start; /* Align to the top */
+  justify-self: start; /* Align to the left */
+  margin-right: 10px;
+}
+.web {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  grid-column: 1; /* First column */
+  grid-row: 4; /* Fourth row */
+  align-self: start; /* Align to the top */
+  justify-self: start; /* Align to the left */
+  margin-left: 40px; /* Space between SVGs */
+}
+.mail {
+  width: 45px;
+  height: px;
+  fill: white;
+  grid-column: 1; /* First column */
+  grid-row: 4; /* Fourth row */
+  align-self: start; /* Align to the top */
+  justify-self: start; /* Align to the left */
+  margin-left: 80px; /* Space between SVGs */
+}
