@@ -21,7 +21,7 @@ svg {
   top: 50%;
   transform: translateY(+50%);
 }
-/* The font stuff  */
+/* The font / grid stuff  */
 @font-face {
   font-family: "customfont";
   src: url(fonts/VTKSSMASH.ttf);
