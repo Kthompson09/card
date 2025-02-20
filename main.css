@@ -7,6 +7,11 @@ body {
 svg {
   fill: white;
 }
+svg:hover {
+  fill: rgba(251, 250, 252, 0.683);
+  transform: scale(1.8);
+  opacity: 0.9;
+}
 
 .card {
   display: grid;
@@ -35,7 +40,14 @@ h1 {
   align-self: start;
   justify-self: start;
   margin: 0;
+  padding-left: 10px; 
+  transition: transform 0.3s
 }
+h1:hover {
+  transform: scale(1.1)
+}
+
+
 h2 {
   font-family: Allerta Stencil;
   font-size: 20px;
@@ -44,6 +56,7 @@ h2 {
   align-self: start;
   justify-self: start;
   margin: 0;
+  padding-left: 10px;
 }
 li {
   font-family: alata;
@@ -51,37 +64,48 @@ li {
   list-style-type: disc;
   grid-column: 1 / span 3;
   grid-row: 3;
-  margin-top: -15px;
-  line-height: 2.5;
+  margin-top: -30px;
+  line-height: 3.5;
 }
 /* styles for svgs */
 .insta {
   width: 30px;
   height: 30px;
   fill: white;
-  grid-column: 1; /* First column */
-  grid-row: 4; /* Fourth row */
-  align-self: start; /* Align to the top */
-  justify-self: start; /* Align to the left */
+  grid-column: 1; 
+  grid-row: 4; 
+  align-self: start; 
+  justify-self: start; 
   margin-right: 10px;
+  margin-top: -10px
 }
 .web {
   width: 30px;
   height: 30px;
   fill: white;
-  grid-column: 1; /* First column */
-  grid-row: 4; /* Fourth row */
-  align-self: start; /* Align to the top */
-  justify-self: start; /* Align to the left */
-  margin-left: 40px; /* Space between SVGs */
+  grid-column: 1; 
+  grid-row: 4; 
+  align-self: start; 
+  justify-self: start; 
+  margin-left: 45px; 
+  margin-top: -10px
+  
 }
 .mail {
   width: 45px;
-  height: px;
+  height: 50px;
   fill: white;
-  grid-column: 1; /* First column */
-  grid-row: 4; /* Fourth row */
-  align-self: start; /* Align to the top */
-  justify-self: start; /* Align to the left */
-  margin-left: 80px; /* Space between SVGs */
+  grid-column: 1; 
+  grid-row: 4; 
+  align-self: start; 
+  justify-self: start; 
+  margin-left: 83px; 
+  margin-top: -15px
 }
+
+/* mobile grid */
+@media (max-width: 768px) { 
+  body { font-size: 16px; padding: 10px; 
+  }
+}
+  
