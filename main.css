@@ -8,7 +8,7 @@ svg {
   fill: white;
 }
 svg:hover {
-  fill: rgba(251, 250, 252, 0.683);
+  fill: rgba(250, 17, 0, 0.815);
   transform: scale(1.8);
   opacity: 0.9;
 }
